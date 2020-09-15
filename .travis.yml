@@ -1,22 +1,15 @@
-language: R
-cache: packages
-sudo: false
-warnings_are_errors: true
+language: r
 
-addons:
-  apt:
-    packages:
-      - libgsl0-dev # for topicmodels
-      - libxml2-dev # for XML, a dependency of quanteda
+sudo: required
+
+env: _R_CHECK_CRAN_INCOMING_=FALSE
 
 r_packages:
   - covr
-  - topicmodels
-  - data.table # so data.table tests will get checked
+  - devtools
 
-matrix:
-  include:
-  - r: release
-    after_success:
-    Rscript -e 'covr::codecov()'
-  - r: oldrel
+r_github_packages:
+  - codecov/example-r
+
+after_success:
+  - Rscript -e 'library(covr);codecov()'
