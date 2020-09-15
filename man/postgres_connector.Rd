@@ -14,6 +14,21 @@ postgres_connector(
   verbose = TRUE
 )
 }
+\arguments{
+\item{host}{The hostame, Sys.getenv('POSTGRES_HOST')}
+
+\item{port}{The port, Sys.getenv('POSTGRES_PORT')}
+
+\item{user}{The port, Sys.getenv('POSTGRES_USER')}
+
+\item{password}{The port, Sys.getenv('POSTGRES_PASSWORD')}
+
+\item{dbname}{The dbname, Sys.getenv('POSTGRES_DB')}
+
+\item{max_attempts}{Max retries if error}
+
+\item{verbose}{Boolean, shut up or not}
+}
 \description{
 postgres_connector
 }
