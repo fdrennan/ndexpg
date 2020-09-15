@@ -3,16 +3,16 @@ cache: packages
 sudo: false
 warnings_are_errors: true
 
-addons:
-  apt:
-    packages:
-      - libgsl0-dev # for topicmodels
-      - libxml2-dev # for XML, a dependency of quanteda
+# addons:
+#   apt:
+#     packages:
+#       - libgsl0-dev # for topicmodels
+#       - libxml2-dev # for XML, a dependency of quanteda
 
-r_packages:
-  - covr
-  - topicmodels
-  - data.table # so data.table tests will get checked
+# r_packages:
+#   - covr
+#   - topicmodels
+#   - data.table # so data.table tests will get checked
 
 matrix:
   include:
