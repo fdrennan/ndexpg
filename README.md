@@ -1,5 +1,6 @@
  <!-- badges: start -->
   [![Travis build status](https://travis-ci.com/fdrennan/ndexpg.svg?branch=master)](https://travis-ci.com/fdrennan/ndexpg)
+   [![Codecov test coverage](https://codecov.io/gh/fdrennan/ndexpg/branch/master/graph/badge.svg)](https://codecov.io/gh/fdrennan/ndexpg?branch=master)
   <!-- badges: end -->
 
 
